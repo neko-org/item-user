@@ -2,7 +2,7 @@
 
 Automically buy/use items for you.
 
-Can add/remove IDs in ``itemconfig.json``(Skill Tomes included by default)
+Can add/remove IDs in ``itemconfig.json``(Skill Tomes and XP Scroll included by default)
 
 Commands:
 ```
