@@ -95,7 +95,7 @@ module.exports = function ItemUser(mod) {
 		}
 	}
 	
-	mod.hook('S_MEDAL_STORE_SELL_LIST', 2, event => { contract = event.contract })
+	/*mod.hook('S_MEDAL_STORE_SELL_LIST', 2, event => { contract = event.contract })
 
 	mod.hook('S_MEDAL_STORE_BASKET', 1, event => { if((event.cost || event.credits) >= amount) doneBuying = true })
 
@@ -116,7 +116,7 @@ module.exports = function ItemUser(mod) {
 			doneBuying = false
 			command.message('Done buying items.')
 		}
-	}
+	}*/
 
 	function saveItems() {
         fs.writeFile(path.join(__dirname, 'itemconfig.json'), JSON.stringify(itemconfig, null, 4), err => {
@@ -137,7 +137,7 @@ module.exports = function ItemUser(mod) {
                 grabItem = true
 				command.message('Press the item you want to use automatically.')
                 break
-			case "buy":
+			/*case "buy":
 				if(value > 18) {
 					command.message('Please enter a lower value.')
 					return
@@ -145,7 +145,7 @@ module.exports = function ItemUser(mod) {
 				amount = value
 				buyItems()
 				command.message('Buying ' + amount + ' items.')
-				break
+				break*/
 			case "stop":
 				enabled = false
 				command.message('Stopping module.')
