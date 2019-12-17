@@ -12,8 +12,6 @@ item delay <value> - Set delay for using items
 
 item id - Use an item not from config file
 
-item buy <amount> - Amount of items you want to autobuy (Token shop must be open)
-
 item stop - Stop the module
 
 ```
